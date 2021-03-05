@@ -1,9 +1,13 @@
+/*
+Refractoring function
+*/
 const defineElement = (tagName, propList, propValList) => {
    const element = document.createElement(tagName)
    for (let i = 0; i < propList.length; i++)
       element[propList[i]] = propValList[i]
    return element
 }
+
 /*
 The showPage function shows 9 students each page, and receive student database and page 
 number as arguments
